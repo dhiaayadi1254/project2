@@ -71,13 +71,62 @@ const menuData = {
     { name: "Cornet thon ", description: "", price: "10 TND",  }
   ],
   plats: [
-    { name: "Plat Escalope", description: "Escalope panée, frites", price: "18 TND", image: "https://source.unsplash.com/300x200/?escalope" }
+    { name: "Plat kebab de viande", description: "", price: "20 TND",  },
+    { name: "Plat kebab de poulet", description: "", price: "16 TND",  },
+    { name: "Plat brochette de poulet", description: "", price: "15 TND",  },
+    { name: "filet de poissons", description: "", price: "23 TND",  },
+    { name: "filet de sole", description: "", price: "20 TND",  },
+    { name: "filet sauce champion", description: "", price: "25 TND",  },
+    { name: "filet a la mexicain", description: "", price: "20 TND",  },
+    { name: "filet grille", description: "", price: "20 TND",  },
+    { name: "filet 5 fromage", description: "", price: "30 TND",  },
+    { name: "agneau a la vapeur", description: "", price: "23 TND",  },
+    { name: "griade mixte", description: "", price: "20 TND",  },
+    { name: "cottlete grille", description: "", price: "20 TND",  },
+    { name: "foie grille", description: "", price: "20 TND",  },
+    { name: "dorade grille", description: "", price: "20 TND",  },
+    { name: "crevette soutee", description: "", price: "20 TND",  },
+    { name: "cordon bleu", description: "", price: "20 TND",  },
+    { name: "cordon a la creme", description: "", price: "20 TND",  },
+    { name: "2 cuisse de poulet", description: "", price: "16 TND",  },
+    { name: "escalope gratinee fromage", description: "", price: "17 TND",  },
+    { name: "escalope rolle farcie", description: "", price: "18 TND",  },
+    { name: "escalope a la mexicain", description: "", price: "16 TND",  },
+    { name: "escalope a la sause chamignon", description: "", price: "16 TND",  },
+    { name: "escalope a la creme ", description: "", price: "14 TND",  },
+    { name: "escalope panne", description: "", price: "14 TND",  },
+    { name: "escalope grille", description: "", price: "12 TND",  },
+
+    
+  
+  
+    
   ],
   entree: [
-    { name: "Salade Mechouia", description: "Entrée tunisienne", price: "7 TND", image: "https://source.unsplash.com/300x200/?salad" }
+    { name: "salade cesar", description: "", price: "10 TND",},
+    { name: "salade niçoise", description: "", price: "10 TND",},
+    { name: "salade fruit de mer", description: "", price: "15 TND",},
+    { name: "salade tunisien", description: "", price: "7 TND",},
+    { name: "salade variee", description: "", price: "8 TND",},
+    { name: "biske de crevette", description: "", price: "10 TND",},
+    { name: "brike thon ", description: "", price: "4 TND",},
+    { name: "brike chevrette", description: "", price: "6 TND",},
+    { name: "omlette thon ", description: "", price: "4 TND",},
+    { name: "omlette chevrette", description: "", price: "6 TND",},
+    { name: "ojja merguez", description: "", price: "12 TND",},
+    { name: "ojja fruit de mer", description: "", price: "16 TND",},
+    { name: "ojja escalope", description: "", price: "14 TND",},
+    { name: "ojja royale", description: "", price: "20 TND",},
+    
   ],
   pate : [
-    { name: "Pâtes Carbonara", description: "Pâtes à la carbonara", price: "15 TND", image: "https://source.unsplash.com/300x200/?pasta" }
+   { name: "spaghetti fruit de mer", description: "", price: "20 TND", },
+   { name: "spaghetti bolognese", description: "", price: "17 TND", },
+   { name: "spaghetti polonne 5 fromage", description: "", price: "20 TND", },
+   { name: "spaghetti tagliatelle chevrette", description: "", price: "20 TND", },
+   { name: "lazagna", description: "", price: "16 TND", },
+   { name: "casarettchee", description: "", price: "25 TND", },
+   { name: "paella complet", description: "", price: "30 TND", },
   ]
 };
 
