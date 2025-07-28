@@ -192,9 +192,15 @@ header {
 }
 
 .desc {
-  font-size: 0.8rem; /* كان 0.9rem */
+  font-size: 0.5rem; /* كان 0.9rem */
   color: #555;
   margin-bottom: 8px;
+  min-height: 20px;      /* يضمن أن الوصف يظهر حتى لو قصير */
+  display: block;
+  overflow: visible;     /* يظهر كل النص */
+  white-space: normal;   /* يسمح بتعدد الأسطر */
+  text-overflow: unset;  /* لا يخفي النص */
+  word-break: break-word;/* يكسر الكلمة الطويلة */
 }
 
 .price {

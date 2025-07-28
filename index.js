@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', () => {
       div.className = 'menu-item fade-in';
       div.style.animationDelay = `${idx * 0.10}s`; // تأخير متدرج
       div.innerHTML = `
-        <img loading="lazy" src="${item.image}" alt="${item.name}" />
+       
         <div class="content">
           <div class="title">${item.name}</div>
           <div class="desc">${item.description}</div>
@@ -192,4 +192,4 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-/* أضف زر التحديث في ملف index.html وليس هنا */
+
