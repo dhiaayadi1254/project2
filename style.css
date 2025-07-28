@@ -132,10 +132,12 @@ header {
 /* Menu items grid */
 .menu-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 16px;
-  justify-content: center;    /* يوسط الأعمدة أفقياً */
-  align-items: start;         /* يبدأ من فوق */
+  grid-template-columns: repeat(4, 1fr); /* 4 كروت في كل سطر */
+  gap: 38px 28px; /* تباعد عمودي وأفقي */
+  justify-items: center;
+  padding: 40px 10px 30px 10px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .menu-item {
@@ -391,5 +393,15 @@ footer .phone-link:hover { color: #005fcc; }
   }
   .menu-item img {
     height: 60px;
+  }
+}
+@media (max-width: 900px) {
+  .menu-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .menu-items {
+    grid-template-columns: 1fr;
   }
 }

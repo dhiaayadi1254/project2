@@ -3,25 +3,56 @@ if ('scrollRestoration' in history) {
 }
 
 const menuData = {
-  shisha: [
-    { name: "Double Apple", description: "Classic flavor", price: "15 TND", image: "https://source.unsplash.com/300x200/?shisha" },
-    { name: "Blue Mist", description: "Mint & blueberry mix", price: "18 TND", image: "https://source.unsplash.com/300x200/?hookah" }
-  ],
-  food: [
-    { name: "Grilled Chicken", description: "Served with fries", price: "25 TND", image: "https://source.unsplash.com/300x200/?grilled-chicken" },
-    { name: "Burger Deluxe", description: "With double cheese", price: "20 TND", image: "https://source.unsplash.com/300x200/?burger" }
-  ],
+  
+  
+  
   pizza: [
-    { name: "Margherita", description: "Fresh mozzarella & basil", price: "20 TND", image: "https://source.unsplash.com/300x200/?pizza" },
-    { name: "Pepperoni", description: "Spicy & tasty", price: "22 TND", image: "https://source.unsplash.com/300x200/?pepperoni-pizza" }
+    { name: "pizza Margherita", description: "souce tomate+fromage+olive", price: "10 TND",},
+    { name: "pizza neptune", description: "souce tomate+fromage+olive+thon", price: "12 TND",},
+    { name: "pizza regina", description: "sauce tomate+fromage+jambon+champignon", price: "14 TND",},
+    { name: "pizza campione", description: "souce tomate +fromage +vinde hachée+champignon", price: "20 TND",},
+    { name: "pizza vegetarienne", description: "souce tomate+fromage+poivront+aubergune", price: "14 TND",},
+    { name: "pizza napolitaine", description: "souce tomate+fromage+capres+anchois+olive", price: "17 TND",},
+    { name: "pizza 4 fromage", description: "souce tomate +fromage+gruyere+gorgonzola+parmesan", price: "20 TND",},
+    { name: "pizza 4 saisons", description: "souce tomate+fromage+thon+jambon+champignon+legume", price: "16 TND",},
+    { name: "pizza pepperoni", description: "souce tomate+chorizo+parmesan", price: "15 TND",},
+    { name: "pizza fruit de mer", description: "souce tomate+fromage+calamre+molle+chevrette", price: "20 TND",},
+    { name: "pizza oscar", description: "souce tomate+fromage+thon+chawarma+escalope+champignon+double patte", price: "20 TND",},
+    { name: "pizza moyene", description: "souce tomate+fromage+thon+olive", price: "10 TND",},
+    { name: "pizza mini", description: "souce tomate+fromage+thon+olive", price: "6 TND",}
+ 
+
+
   ],
   drinks: [
     { name: "Mojito", description: "Fresh mint & lime", price: "10 TND", image: "https://source.unsplash.com/300x200/?mojito" },
     { name: "Orange Juice", description: "Freshly squeezed", price: "8 TND", image: "https://source.unsplash.com/300x200/?orange-juice" }
   ],
-  desserts: [
-    { name: "Chocolate Cake", description: "Rich and moist", price: "12 TND", image: "https://source.unsplash.com/300x200/?chocolate-cake" },
-    { name: "Fruit Salad", description: "Seasonal fruits", price: "10 TND", image: "https://source.unsplash.com/300x200/?fruit-salad" }
+  
+  
+  makloub: [
+    { name: "Makloub Poulet", description: "Makloub au poulet grillé", price: "12 TND", image: "https://source.unsplash.com/300x200/?makloub" }
+  ],
+  sandwich: [
+    { name: "Sandwich Thon", description: "Sandwich au thon et salade", price: "8 TND", image: "https://source.unsplash.com/300x200/?sandwich" }
+  ],
+  libanais: [
+    { name: "Tacos Libanais", description: "Tacos à la libanaise", price: "14 TND", image: "https://source.unsplash.com/300x200/?shawarma" }
+  ],
+  bagutte: [
+    { name: "Baguette Farcie", description: "Baguette garnie", price: "10 TND", image: "https://source.unsplash.com/300x200/?baguette" }
+  ],
+  cornet: [
+    { name: "Cornet Viande", description: "Cornet à la viande", price: "11 TND", image: "https://source.unsplash.com/300x200/?wrap" }
+  ],
+  plats: [
+    { name: "Plat Escalope", description: "Escalope panée, frites", price: "18 TND", image: "https://source.unsplash.com/300x200/?escalope" }
+  ],
+  entree: [
+    { name: "Salade Mechouia", description: "Entrée tunisienne", price: "7 TND", image: "https://source.unsplash.com/300x200/?salad" }
+  ],
+  pate : [
+    { name: "Pâtes Carbonara", description: "Pâtes à la carbonara", price: "15 TND", image: "https://source.unsplash.com/300x200/?pasta" }
   ]
 };
 
@@ -145,11 +176,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
   function iconFor(cat) {
     switch(cat) {
-      case 'shisha': return '💨';
-      case 'food': return '🍽️';
+    
       case 'pizza': return '🍕';
       case 'drinks': return '🥤';
-      case 'desserts': return '🍰';
+       case 'makloub': return '🌯';
+      case 'sandwich': return '🥪';
+      case 'libanais': return '🧆';
+      case 'bagutte': return '🥖';
+      case 'cornet': return '🌮';
+      case 'plats': return '🍲';
+      case 'entree': return '🥗';
+      case 'pate': return '🍝';
       default: return '🍴';
     }
   }
