@@ -25,8 +25,7 @@ const menuData = {
 
   ],
   drinks: [
-    { name: "Mojito", description: "Fresh mint & lime", price: "10 TND", image: "https://source.unsplash.com/300x200/?mojito" },
-    { name: "Orange Juice", description: "Freshly squeezed", price: "8 TND", image: "https://source.unsplash.com/300x200/?orange-juice" }
+   
   ],
   
   

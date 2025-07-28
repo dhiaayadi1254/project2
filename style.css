@@ -214,8 +214,14 @@ header {
 
 .price {
   font-weight: 700;
-  font-size: 0.95rem; /* كان 1.1rem */
+  font-size: 0.95rem;
   color: #0077ff;
+  margin-top: auto;
+  padding: 6px 12px; /* Padding داخل الإطار */
+  border: 2px solid #0077ff; /* إطار بلون أزرق */
+  border-radius: 12px; /* تدوير الزوايا */
+  align-self: center; /* باش يخليه في الوسط أفقياً */
+  background: rgba(0, 119, 255, 0.05); /* خلفية خفيفة شفافة */
 }
 
 /* Dark mode overrides */
