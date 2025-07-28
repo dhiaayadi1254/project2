@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oscar Restaurant Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <span class="logo">🍽️ Oscar</span>
+    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+  </header>
+  <main>
+    <div id="landing" class="centered">
+      <div>
+        <h1>Oscar Restaurant</h1>
+        <p class="slogan">Where taste meets elegance</p>
+      </div>
+    </div>
+
+    <section id="categories" class="categories hidden" aria-label="Menu Categories">
+      <!-- Category buttons will be injected here -->
+    </section>
+
+    <section id="menu" class="menu hidden" aria-label="Menu Items">
+      <button id="backBtn" class="back-btn" aria-label="Back to Categories">← Back</button>
+      <div id="menuItems" class="menu-items"></div>
+    </section>
+
+   
+  </main>
+  <button id="floatingBackBtn" class="floating-back-btn" aria-label="Back to Categories" title="Back">←</button>
+  <button class="refresh-btn" onclick="location.reload()" title="تحديث القائمة">⟳</button>
+  <footer>
+    Oscar Restaurant &copy; 2025
+    <a href="https://instagram.com/oscra" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://wa.me/216XXXXXXXX" class="whatsapp-btn" target="_blank" rel="noopener" title="احجز عبر واتساب">💬</a>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
