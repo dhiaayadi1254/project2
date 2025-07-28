@@ -154,7 +154,7 @@ window.addEventListener('DOMContentLoaded', () => {
       btn.className = 'category-card fade-in';
       btn.textContent = capitalize(cat);
       btn.setAttribute('data-category', cat);
-      btn.style.animationDelay = `${idx * 0.12}s`; // تأخير متدرج
+      btn.style.animationDelay = `${idx * 0.12}s`; //
       btn.addEventListener('click', () => {
         fadeOutCategoriesThenShowMenu(cat);
       });
@@ -190,7 +190,7 @@ window.addEventListener('DOMContentLoaded', () => {
     menuData[category].forEach((item, idx) => {
       const div = document.createElement('div');
       div.className = 'menu-item fade-in';
-      div.style.animationDelay = `${idx * 0.10}s`; // تأخير متدرج
+      div.style.animationDelay = `${idx * 0.10}s`; // 
       div.innerHTML = `
        
         <div class="content">
@@ -209,7 +209,7 @@ window.addEventListener('DOMContentLoaded', () => {
       floatingBackBtn.style.display = 'none';
     }
 
-    // في JS عند التنقل بين القوائم
+    
     loader.classList.remove('hidden');
     setTimeout(() => loader.classList.add('hidden'), 800);
   }
@@ -250,19 +250,25 @@ window.addEventListener('DOMContentLoaded', () => {
   function iconFor(cat) {
     switch(cat) {
     
-      case 'pizza': return '🍕';
-      case 'drinks': return '🥤';
-       case 'makloub': return '🌯';
-      case 'sandwich': return '🥪';
-      case 'libanais': return '🧆';
-      case 'bagutte': return '🥖';
-      case 'cornet': return '🌮';
-      case 'plats': return '🍲';
-      case 'entree': return '🥗';
-      case 'pate': return '🍝';
+      case 'pizza🍕': return '🍕';
+      case 'drinks 🥤': return '🥤';
+      case 'makloub 🌯': return '🌯';
+      case 'sandwich 🥪': return '🥪';
+      case 'libanais 🧆': return '🧆';
+      case 'bagutte 🥖': return '🥖';
+      case 'cornet 🌮': return '🌮';
+      case 'plats 🍲': return '🍲';
+      case 'entree 🥗': return '🥗';
+      case 'pate 🍝': return '🍝';
       default: return '🍴';
     }
   }
+  const clickSound = new Audio('');
+
+document.addEventListener('click', () => {
+  clickSound.currentTime = 0;
+  clickSound.play();
+});
 });
 
 
