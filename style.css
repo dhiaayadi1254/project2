@@ -142,7 +142,7 @@ header {
 
 .menu-item {
   background: white;
-  border-radius: 22px;
+  border-radius: 30px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* أخف */
   overflow: hidden;
   cursor: default;
@@ -150,8 +150,8 @@ header {
   color: #222;
   display: flex;
   flex-direction: column;
-  font-size: 0.95rem; /* أصغر */
-  max-width: 180px; /* حد أقصى للكارد */
+  font-size: 2rem; /* أصغر */
+  max-width: 200px; /* حد أقصى للكارد */
   margin: 0 auto;
   animation: popIn 0.5s cubic-bezier(.68,-0.55,.27,1.55) both;
 }

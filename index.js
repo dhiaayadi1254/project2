@@ -8,7 +8,7 @@ const menuData = {
   
   pizza: [
     { name: "pizza Margherita", description: "souce tomate+fromage+olive", price: "10 TND",},
-    { name: "pizza neptune", description: "souce tomate+fromage+olive+thon", price: "12 TND",},
+    { name: "pizza neptune", description: "souce tomate+fromage+olive+thon", price: "13 TND",},
     { name: "pizza regina", description: "sauce tomate+fromage+jambon+champignon", price: "14 TND",},
     { name: "pizza campione", description: "souce tomate +fromage +vinde hachée+champignon", price: "20 TND",},
     { name: "pizza vegetarienne", description: "souce tomate+fromage+poivront+aubergune", price: "14 TND",},
@@ -31,19 +31,44 @@ const menuData = {
   
   
   makloub: [
-    { name: "Makloub Poulet", description: "Makloub au poulet grillé", price: "12 TND", image: "https://source.unsplash.com/300x200/?makloub" }
+    { name: "Makloub au thon ", description: "", price: "6.5 TND", },
+    { name: "Makloub jambon ", description: "", price: "6 TND", },
+  { name: "Makloub chawarma ", description: "", price: "7 TND", },
+  { name: "Makloub escalope ", description: "", price: "7.5 TND", },
+ { name: "Makloub escalope panne ", description: "", price: "8 TND", },
+    { name: "Makloub kebab poulet ", description: "", price: "8 TND", },
+    { name: "Makloub kebab viande ", description: "", price: "9 TND", },
   ],
   sandwich: [
-    { name: "Sandwich Thon", description: "Sandwich au thon et salade", price: "8 TND", image: "https://source.unsplash.com/300x200/?sandwich" }
+    { name: "Sandwich au thon", description: "", price: "5 TND", },
+    { name: "Sandwich au fromage", description: "", price: "5 TND", },
+    { name: "Sandwich jambon", description: "", price: "5 TND", },
+    { name: "Sandwich chawarma", description: "", price: "6 TND", },
+    { name: "Sandwich escalope", description: "", price: "6.5 TND", },
+    { name: "Sandwich escalope panne", description: "", price: "7 TND", },
+    { name: "Sandwich kebab poulet", description: "", price: "7.5 TND", },
+    { name: "Sandwich kebab viande", description: "", price: "8.5 TND", },
+    
   ],
   libanais: [
-    { name: "Tacos Libanais", description: "Tacos à la libanaise", price: "14 TND", image: "https://source.unsplash.com/300x200/?shawarma" }
+    { name: "Libanais thon", description: "", price: "6.5 TND", },
+    { name: "Libanais jambon", description: "", price: "6 TND", },
+    { name: "Libanais chawarma", description: "", price: "7 TND", },
+    { name: "Libanais escalope", description: "", price: "7.5 TND", },
+    { name: "Libanais escalope panne", description: "", price: "8 TND", },
+    { name: "Libanais kebab poulet", description: "", price: "8 TND", },
+    { name: "Libanais kebab viande", description: "", price: "9 TND", }
   ],
   bagutte: [
-    { name: "Baguette Farcie", description: "Baguette garnie", price: "10 TND", image: "https://source.unsplash.com/300x200/?baguette" }
+    { name: "Baguette thon", description: "", price: "10 TND",  },
+    { name: "Baguette chawarma", description: "", price: "10 TND",  },
+    { name: "Baguette escalope", description: "", price: "12 TND",  },
+    { name: "Baguette oscar", description: "", price: "17 TND",  }
   ],
   cornet: [
-    { name: "Cornet Viande", description: "Cornet à la viande", price: "11 TND", image: "https://source.unsplash.com/300x200/?wrap" }
+    { name: "Cornet escalope ", description: "", price: "12 TND",  },
+    { name: "Cornet chawarma ", description: "", price: "10 TND",  },
+    { name: "Cornet thon ", description: "", price: "10 TND",  }
   ],
   plats: [
     { name: "Plat Escalope", description: "Escalope panée, frites", price: "18 TND", image: "https://source.unsplash.com/300x200/?escalope" }
