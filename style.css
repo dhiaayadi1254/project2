@@ -131,7 +131,7 @@ header {
   box-shadow: 0 6px 18px rgba(0,119,255,0.8); /* ظل أقوى */
   transition: background 0.3s ease, box-shadow 0.3s ease;
   display: inline-block; /* للتأكد من الحجم */
-  user-select: none;
+
 }
 .back-btn:hover {
   background: #005fcc;
@@ -407,6 +407,14 @@ footer .phone-link:hover { color: #005fcc; }
 .floating-back-btn {
   box-shadow: 0 8px 24px rgba(0,119,255,0.18);
   border: 2px solid #fff;
+}
+@media (max-width: 600px) {
+  .back-btn {
+    display: none;
+  }
+  .floating-back-btn {
+    display: block;
+  }
 }
 
 @media (max-width: 400px) {
