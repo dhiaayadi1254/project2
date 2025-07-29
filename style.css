@@ -63,7 +63,7 @@ header {
   letter-spacing: 2px;
   text-align: center;
   padding: 0 15px;
-  animation: fadeInUp 1s ease forwards;
+  animation: fadeInUp 3s ease forwards;
 }
 
 @media (max-width: 400px) {
