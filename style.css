@@ -114,10 +114,13 @@ header {
 
 /* Menu */
 .menu {
-  max-width: 900px;
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* يخليهم في الوسط */
+  gap: 20px; /* مسافة بين الكروت */
+  padding: 0 20px;
   margin: 100px auto 40px;
   animation: fadeInUp 1s ease forwards;
-  padding: 0 20px;
 }
 
 .back-btn {
@@ -149,6 +152,10 @@ header {
 
 /* Menu items grid */
 .menu-item {
+  display: flex;
+  flex-direction: column; /* خلي العناصر فوق بعضها */
+  align-items: center;    /* خلي العناصر في الوسط */
+  justify-content: center;
   background: white;
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
