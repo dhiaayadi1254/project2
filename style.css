@@ -115,12 +115,12 @@ header {
 /* Menu */
 .menu {
    display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* يخليهم في الوسط */
-  gap: 20px; /* مسافة بين الكروت */
+  flex-direction: column;   /* خليهم يجيوا تحت بعضهم */
+  align-items: center;      /* وسّطهم أفقياً */
+  gap: 20px;                /* مسافة بين الكروت */
   padding: 0 20px;
   margin: 100px auto 40px;
-  animation: fadeInUp 1s ease forwards;
+  animation: fadeInUp 1.2s ease forwards;
 }
 
 .back-btn {
@@ -152,10 +152,6 @@ header {
 
 /* Menu items grid */
 .menu-item {
-  display: flex;
-  flex-direction: column; /* خلي العناصر فوق بعضها */
-  align-items: center;    /* خلي العناصر في الوسط */
-  justify-content: center;
   background: white;
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -182,6 +178,8 @@ header {
   width: 100%;
   max-width: 220px;
   min-height: 220px;
+    width: 100%;
+  max-width: 220px;   /* باش تبقى بالحجم هذا حتى في الموبايل */
 }
 
 .menu-item:hover {
