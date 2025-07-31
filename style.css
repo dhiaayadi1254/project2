@@ -114,13 +114,24 @@ header {
 
 /* Menu */
 .menu {
-   display: flex;
-  flex-direction: column;   /* خليهم يجيوا تحت بعضهم */
-  align-items: center;      /* وسّطهم أفقياً */
-  gap: 20px;                /* مسافة بين الكروت */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   padding: 0 20px;
   margin: 100px auto 40px;
-  animation: fadeInUp 1.2s ease forwards;
+  animation: fadeInUp 1s ease forwards;
+}
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;   /* خليهم تحت بعضهم */
+    align-items: center;      /* وسّطهم في الوسط */
+  }
+
+  .menu-item {
+    width: 100%;
+    max-width: 260px;         /* حجم الكارد في الهاتف */
+  }
 }
 
 .back-btn {
