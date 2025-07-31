@@ -124,13 +124,14 @@ header {
 }
 @media (max-width: 768px) {
   .menu {
-    flex-direction: column;   /* خليهم تحت بعضهم */
-    align-items: center;      /* وسّطهم في الوسط */
+    flex-wrap: nowrap;       /* ماعادش يلف (كل كارد في صف وحدو) */
+    flex-direction: column;  /* الكروت تحت بعضهم */
+    align-items: center;     /* في الوسط */
   }
 
   .menu-item {
     width: 100%;
-    max-width: 260px;         /* حجم الكارد في الهاتف */
+    max-width: 250px;        /* الحجم متاع الكارد في الهاتف */
   }
 }
 
