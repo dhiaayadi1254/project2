@@ -253,6 +253,7 @@ const itemImageMap = {
   "paella complet": "images/paella_complet.jpg",
 };
 
+
 window.addEventListener('DOMContentLoaded', () => {
   const landing = document.getElementById('landing');
   const categories = document.getElementById('categories');
@@ -277,7 +278,7 @@ window.addEventListener('DOMContentLoaded', () => {
       const btn = document.createElement('button');
       btn.className = 'category-card fade-in';
       btn.setAttribute('data-category', cat);
-      btn.style.animationDelay = `${idx * 0.12}s`;
+      btn.style.animationDelay = `${idx * 0.1}s`;
 
       // Only show formatted label with emoji (no image, no duplicate text)
       btn.textContent = `${capitalize(cat)} ${emojiMap[cat] || ''}`;
@@ -317,7 +318,7 @@ window.addEventListener('DOMContentLoaded', () => {
     menuData[category].forEach((item, idx) => {
       const div = document.createElement('div');
       div.className = 'menu-item fade-in';
-      div.style.animationDelay = `${idx * 0.10}s`;
+      div.style.animationDelay = `${idx * 0.1}s`;
       div.innerHTML = `
   <div class="content">
     <img src="${itemImageMap[item.name] || 'images/placeholder.jpg'}" alt="${item.name}" class="menu-item-img" />
@@ -336,6 +337,8 @@ window.addEventListener('DOMContentLoaded', () => {
     } else {
       floatingBackBtn.style.display = 'none';
     }
+    // Show loader briefly
+
 
 
     loader.classList.remove('hidden');
@@ -352,7 +355,7 @@ window.addEventListener('DOMContentLoaded', () => {
       card.style.display = 'block';
       card.classList.remove('fade-out');
       card.classList.add('fade-in');
-      card.style.animationDelay = `${idx * 0.12}s`;
+      card.style.animationDelay = `${idx * 0.1}s`;
     });
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -397,6 +400,7 @@ window.addEventListener('DOMContentLoaded', () => {
     clickSound.currentTime = 0;
     clickSound.play();
   });
+  // Preload images
 });
 
 
